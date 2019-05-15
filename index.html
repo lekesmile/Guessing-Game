@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Numeropeli</title>
+        <link rel="stylesheet" type="text/css" href="css/t02_numeropeli.css">
+    </head>
+    <body>
+      <div class="container">
+
+
+        <h1>Numeropeli</h1>
+        <form id="lomake">
+      		<label for="luku">Arvaa luku väliltä 0-100: </label>
+		      <input id="luku" type="text" name="luku">
+		      <button id="arvaa" type="submit">Arvaa</button>
+          <button id="resetbutton" type="reset">Reset</button>
+	      </form>
+        <p id="alempi"></p>
+        <p id="ylempi"></p>
+        <p id="vihje"></p>
+        <p id="numerot"></p>
+        <p id="arvauslaskin"></p>
+
+        <div class="bar-chart">
+          <div class="bar" id="lower-bar" style="width: 0%; background-color: blue">
+            <span></span></div>
+          <div class="bar" id="middle-bar" style="width: 100%; background-color: orange">
+            <span></span></div>
+          <div class="bar" id="upper-bar" style="width: 0%; background-color: green">
+            <span></span></div>
+        </div>
+
+</div>
+        <script src="javascript/numeropeli.js"></script>
+    </body>
+  </html>
